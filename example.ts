@@ -5,7 +5,7 @@ interface quiz {
 }
 
 interface Name {
-  (arr: Array<quiz>): Array<string>;
+  (arr: quiz[]): Array<string>;
 }
 
 const array: Array<quiz> = [
@@ -19,8 +19,8 @@ const array: Array<quiz> = [
 ];
 
 const result: Name = (arr) => {
-  let nameArr = [];
-  arr.map((el) => {
+  let nameArr: Array<string> = [];
+  arr.map((el: quiz) => {
     if (el.age >= 25 && el.height >= 175) nameArr.push(el.name);
   });
   return nameArr;
