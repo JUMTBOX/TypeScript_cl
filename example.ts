@@ -5,7 +5,7 @@ interface quiz {
 }
 
 interface Name {
-  (arr: quiz[]): string[];
+  (arr: Array<quiz>): Array<string>;
 }
 
 const array: Array<quiz> = [
