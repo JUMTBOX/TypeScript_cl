@@ -8,7 +8,7 @@ interface Name {
   (arr: quiz[]): string[];
 }
 
-const array = [
+const array: Array<quiz> = [
   { name: "kim", age: 17, height: 182 },
   { name: "lee", age: 39, height: 172 },
   { name: "park", age: 21, height: 158 },
